@@ -4,7 +4,9 @@
 このコードは，[UNREALのコード](https://github.com/miyosuda/unreal)をもとに書き換えたコードである．
 
 ## Training
+
 ***UNREALの場合***
+
 ```
 cd ~/RL-AuxiliaryTask-Selection/code/lab/unreal/
 python main.py
@@ -20,9 +22,10 @@ python main.py
 - ``parallel_size``: 分散学習時のworker数
 - ``max_time_step``: global step数
 
-``unreal_checkpoint``フォルダに学習済みモデルの保存，``unreal_log``フォルダにスコアの推移を記録したtensorbordのファイルが保存される．
+``unreal_checkpoints``フォルダに学習済みモデルの保存，``unreal_log``フォルダにスコアの推移を記録したtensorbordのファイルが保存される．
 
 ***UNREAL+Auxiliary Selectionの場合***
+
 ```
 cd ~/RL-AuxiliaryTask-Selection/code/lab/unreal-approch/
 python main.py
@@ -30,18 +33,27 @@ python main.py
 
 UNREALの場合と同様に``options.py``にてハイパーパラメータの変更が可能である．
 
-``unreal_checkpoint``フォルダに学習済みモデルの保存，``unreal_log``フォルダにスコアの推移を記録したtensorbordのファイルが保存される．
+``unreal_checkpoints``フォルダに学習済みモデルの保存，``unreal_log``フォルダにスコアの推移を記録したtensorbordのファイルが保存される．
 
 ## Visualization
+
 ***UNREALの場合***
+
 ```
 cd ~/RL-AuxiliaryTask-Selection/code/lab/unreal/
 python display.py
 ```
+
+training時と同様に``options.py``にてハイパーパラメータの変更が可能である．
+
+``options.py``内の``checkpoint_dir``を可視化したいモデルが存在するフォルダのパスとする．
+読み込むモデルの指定は，``unreal_checkpoints``フォルダ内に作成される``checkpoint``ファイルを読み込み指定している．
 
 ***UNREAL+Auxiliary Selectionの場合***
 ```
 cd ~/RL-AuxiliaryTask-Selection/code/lab/unreal-approch/
 python display.py
 ```
+
+モデルのパス等は，UNREALの場合と同様である．
 
