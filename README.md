@@ -47,7 +47,7 @@ python display.py
 training時と同様に``options.py``にてハイパーパラメータの変更が可能である．
 
 ``options.py``内の``checkpoint_dir``を可視化したいモデルが存在するフォルダのパスとする．
-読み込むモデルの指定は，``unreal_checkpoints``フォルダ内に作成される``checkpoint``ファイルを読み込み指定している．
+読み込むモデルの指定は，``unreal_checkpoints``フォルダ内に作成される``checkpoint``ファイルに記述することで指定している．
 
 ***UNREAL+Auxiliary Selectionの場合***
 ```
