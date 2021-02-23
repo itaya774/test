@@ -18,7 +18,7 @@ python main.py
 - ``env_name``: ゲーム名
   - nav_maze_static_0{1,2,3}
   - nav_maze_random_goal_0{1,2,3}
-  - seekavoid_arena_0{1,2,3}: 
+  - seekavoid_arena_0{1,2,3}
   - lt_horseshoe_color
   - stairway_to_melon
   - lt_chasm
