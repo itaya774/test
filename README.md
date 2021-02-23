@@ -15,7 +15,15 @@ python main.py
 ``options.py``にてハイパーパラメータを変更することが可能である．
 以下に主なハイパーパラメータを示す．
 
-- ``env_name``: ゲーム名(nav_maze)
+- ``env_name``: ゲーム名
+  - nav_maze_static_0{1,2,3}
+  - nav_maze_random_goal_0{1,2,3}
+  - seekavoid_arena_0{1,2,3}: 
+  - lt_horseshoe_color
+  - stairway_to_melon
+  - lt_chasm
+  - lt_hallway_slope
+  - lt_space_bounce_hard etc.
 - ``use_pixel_change``: 補助タスクPixel Controlの有無 (True or False)
 - ``use_value_replay``: 補助タスクValue Function Replayの有無 (True or False)
 - ``use_reward_prediction``: 補助タスクReward Predictionの有無 (True or False)
