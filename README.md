@@ -65,3 +65,6 @@ python display.py
 
 モデルのパス等は，UNREALの場合と同様である．
 
+## Trained models
+
+過去の実験での学習済みモデルは，modelファイル内にある．
