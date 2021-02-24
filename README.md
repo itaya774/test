@@ -67,4 +67,20 @@ python display.py
 
 ## Trained models
 
-過去の実験での学習済みモデルは，modelファイル内にある．
+過去の実験での学習済みモデルは，modelフォルダ内にある．
+
+modelフォルダ内のディレクトリ構造は以下の通りである．
+
+model
+
+  ├ Auxiliary-Selection (Auxiliary Selectionを導入したモデル)
+  
+  │    └ 各ゲームでのモデルのフォルダ
+  
+  │          └ 学習step数毎でのモデルのフォルダ
+  
+  └ Auxiliary-Tasks (各補助タスクの組み合わせによるモデル)
+  
+       └ 各ゲームでのモデルのフォルダ
+  
+             └ 学習step数毎でのモデルのフォルダ
